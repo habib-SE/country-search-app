@@ -47,7 +47,7 @@ function CountrySearch() {
       <div className="mb-4 py-9 bg-slate-300 w-[106%]">
         <input
           type="text"
-          className="px-10 py-2 border rounded-lg w-64"
+          className="px-10 py-2 border rounded-lg ml-[70%] w-64"
           placeholder="Search for a country..."
           value={searchInput}
           onChange={(e) => setSearchInput(e.target.value)}
