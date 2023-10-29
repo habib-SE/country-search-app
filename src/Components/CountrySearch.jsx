@@ -32,7 +32,10 @@ function CountrySearch() {
       alert("Please enter a country name.");
       return;
     }
-
+    
+    if(searchInput.trim().toLocaleLowerCase()==='china') {
+      setSelectedCountry('cn');
+    }else
     setSelectedCountry(searchInput);
     setSearchInput("");
   };
@@ -51,6 +54,7 @@ function CountrySearch() {
           placeholder="Search for a country..."
           value={searchInput}
           onChange={(e) => setSearchInput(e.target.value)}
+          onSubmit={(e) => setSearchInput(e.target.value)}
         />
         <button
           className="px-4 py-2 bg-blue-500 text-white rounded-lg ml-2"
@@ -60,10 +64,6 @@ function CountrySearch() {
         </button>
       </div>
       <div className="">
-        <p className="mb-4 text-red-600 ml-10 font-serif text-2xl underline">
-          {" "}
-          {selectedCountry}
-        </p>
         {countryData && (
           <div>
             <h2 className="text-xl font-semibold mb-2">Country Information</h2>
