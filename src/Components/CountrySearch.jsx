@@ -54,7 +54,7 @@ function CountrySearch() {
           placeholder="Search for a country..."
           value={searchInput}
           onChange={(e) => setSearchInput(e.target.value)}
-          onSubmit={(e) => setSearchInput(e.target.value)}
+        
         />
         <button
           className="px-4 py-2 bg-blue-500 text-white rounded-lg ml-2"
