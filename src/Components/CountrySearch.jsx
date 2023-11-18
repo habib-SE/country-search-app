@@ -69,37 +69,37 @@ function CountrySearch() {
             <h2 className="text-xl font-semibold mb-2">Country Information</h2>
             <p>
               Country Name:
-              <span className=" text-gray-400 ml-8">
+              <span className=" text-gray-600 ml-8">
                 {countryData.name.common}
               </span>{" "}
             </p>
             <p>
               Official Name:{" "}
-              <span className=" text-gray-400 ml-8">
+              <span className=" text-gray-600 ml-8">
                 {countryData.name.official}
               </span>
             </p>
             <p>
               In Urdu:{" "}
-              <span className=" text-gray-400 ml-[5%]">
+              <span className=" text-gray-600 ml-[5%]">
                 {countryData.translations.urd.official}
               </span>
             </p>
             <p>
               Capital:{" "}
-              <span className=" text-gray-400 ml-20">
+              <span className=" text-gray-600 ml-20">
                 {countryData.capital}
               </span>
             </p>
             <p>
               Population:
-              <span className=" text-gray-400 ml-[4%]">
+              <span className=" text-gray-600 ml-[4%]">
                 {countryData.population}
               </span>{" "}
             </p>
             <p>
               Languages:{" "}
-              <span className=" text-gray-400 ml-[3%]">
+              <span className=" text-gray-600 ml-[3%]">
                 {Object.values(countryData.languages).join(", ")}
               </span>
             </p>
