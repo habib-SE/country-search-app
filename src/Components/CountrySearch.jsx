@@ -32,11 +32,10 @@ function CountrySearch() {
       alert("Please enter a country name.");
       return;
     }
-    
-    if(searchInput.trim().toLocaleLowerCase()==='china') {
-      setSelectedCountry('cn');
-    }else
-    setSelectedCountry(searchInput);
+
+    if (searchInput.trim().toLocaleLowerCase() === "china") {
+      setSelectedCountry("cn");
+    } else setSelectedCountry(searchInput);
     setSearchInput("");
   };
 
@@ -54,7 +53,6 @@ function CountrySearch() {
           placeholder="Search for a country..."
           value={searchInput}
           onChange={(e) => setSearchInput(e.target.value)}
-        
         />
         <button
           className="px-4 py-2 bg-blue-500 text-white rounded-lg ml-2"
